@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Gallery</title>
+
+  <!-- Professional Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Image Gallery</h1>
+
+    <!-- Filter Buttons -->
+    <div class="filters">
+      <button class="active" onclick="filterImages('all', this)">All</button>
+      <button onclick="filterImages('nature', this)">Nature</button>
+      <button onclick="filterImages('city', this)">City</button>
+      <button onclick="filterImages('people', this)">People</button>
+    </div>
+
+    <!-- Gallery -->
+    <div class="gallery">
+      <img src="images/nature1.jpg" class="nature" onclick="openLightbox(0)">
+      <img src="images/nature2.jpg" class="nature" onclick="openLightbox(1)">
+      <img src="images/city1.jpg" class="city" onclick="openLightbox(2)">
+      <img src="images/city2.jpg" class="city" onclick="openLightbox(3)">
+      <img src="images/people1.jpg" class="people" onclick="openLightbox(4)">
+    </div>
+  </div>
+
+  <!-- Lightbox -->
+  <div id="lightbox">
+    <span class="close" onclick="closeLightbox()">×</span>
+    <button class="prev" onclick="changeImage(-1)">❮</button>
+    <img id="lightbox-img">
+    <button class="next" onclick="changeImage(1)">❯</button>
+  </div>
+
+  <!-- External JS -->
+  <script src="script.js"></script>
+
+</body>
+</html>
