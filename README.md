@@ -20,13 +20,13 @@ Smooth zoom and shadow effects on image hover.
 
 Elegant transitions for a modern user experience.
 
-🗂️ Category Filters (Bonus Feature)
+🗂️ Category Filters
 
 Filter images by categories such as Nature, City, and People.
 
 Active filter highlighting for better UX.
 
-⌨️ Keyboard Navigation (Bonus)
+⌨️ Keyboard Navigation
 
 Navigate images using arrow keys.
 
